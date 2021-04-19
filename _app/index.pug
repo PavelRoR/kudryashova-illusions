@@ -1,0 +1,39 @@
+-var path = '';
+-var head_url = 'https://kudryashova.iomp.online/illusions/';
+-var head_title = '«Иллюзии в отношениях с мужчиной»';
+-var head_description = 'Онлайн мастер-класс Тамары Кудряшовой';
+-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/scripts.js';
+-var noref = true;
+-var action = '';
+-var group = '';
+-var formId = '';
+-var formVc = '';
+-var ak = true;
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/1-main
+			include pug/main/2-for
+			include pug/main/3-get
+			include pug/main/4-plan
+			include pug/main/5-mobForm
+			include pug/main/6-questions
+			include pug/main/7-author
+			include pug/main/8-revs
+		include pug/base/2-footer
+		include pug/main/9-modal
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
