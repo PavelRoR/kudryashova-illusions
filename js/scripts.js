@@ -64,28 +64,10 @@ $(document).ready(function () {
             message.slideUp(500);
         });
     });
-    $(function () {
-        $('.marquee-plan').marquee({
-            direction: 'left', //Указывает направление движения содержимого контейнера (left | right | up | down)
-            loop: 100, //Задает, сколько раз будет прокручиваться содержимое. "-1" для бесконечного воспроизведения движения
-            scrolldelay: 0, //Величина задержки в миллисекундах между движениями
-            scrollamount: 50, //Скорость движения контента (px/sec)
-            circular: true, //Если "true" - строка непрерывная
-            drag: true, //Если "true" - включено перетаскивание строки
-            runshort: true, //Если "true" - короткая строка тоже "бегает", "false" - стоит на месте
-            hoverstop: true, //true - строка останавливается при наведении курсора мыши, false - строка не останавливается
-            inverthover: false, //false - стандартное поведение. Если "true" - строка начинает движение только при наведении курсора
-            duplicated: true,
-            duration: 400
-            // startVisible: true
-        });
-
-    });
-    // $(function () {
     $('.marquee-question').marquee({
-                   duration: 15000,
-            startVisible: true,
-            duplicated: true
+        duration: 15000,
+        startVisible: true,
+        duplicated: true
     });
     // });
     /*Конец документа*/

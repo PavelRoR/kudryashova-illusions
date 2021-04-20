@@ -1,17 +1,22 @@
 header
 	.container
 		a(href="https://iomp.ru", target="_blank")
-			img.header-logo(src=path+"img/images/header-logo.png", alt="Логотип")
-		.header-nav
-			a(href="https://iomp.ru", target="_blank")
-				img.header-logo.header-logo-mobile(src=path+"img/images/header-logo.png", alt="Логотип")
-			ul.header-menu
-				li
-					a(href="#for") Для кого
-				li
-					a(href="#plan") Программа
-				li
-					a(href="#author") Спикер
+			if heardDark
+				img.header-logo(src=path+"img/images/header-logo-dark.png", alt="Логотип")
+			else
+				img.header-logo(src=path+"img/images/header-logo.png", alt="Логотип")
+		if fullMenu
+			.header-nav
+				a(href="https://iomp.ru", target="_blank")
+					img.header-logo.header-logo-mobile(src=path+"img/images/header-logo.png", alt="Логотип")
+				ul.header-menu
+					li
+						a(href="#for") Для кого
+					li
+						a(href="#plan") Программа
+					li
+						a(href="#author") Спикер
+if fullMenu
 	.mobile-menu
 		.mobile-menu-line.mobile-menu-line-1
 		.mobile-menu-line.mobile-menu-line-2
