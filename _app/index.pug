@@ -4,6 +4,7 @@
 -var head_description = 'Онлайн мастер-класс Тамары Кудряшовой';
 -var head_img = 'img/banner.jpg';
 -var styles = path+'css/styles.min.css';
+-var fav_ap = path+'favicon.svg';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
 -var scripts = path+'js/scripts.js';
@@ -12,9 +13,15 @@
 -var group = '';
 -var formId = '';
 -var formVc = '';
--var ak = true;
+-var io = true;
+-var ah = true;
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin imgs(cl,src,alt)
+	img(class=cl src=path+src alt=alt)
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -31,9 +38,8 @@ html(lang="ru")
 			include pug/main/5-mobForm
 			include pug/main/6-questions
 			include pug/main/7-author
-			include pug/main/8-revs
+			//- include pug/main/8-revs
 		include pug/base/2-footer
-		include pug/main/9-modal
 		include pug/base/3-scripts
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
