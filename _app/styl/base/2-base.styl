@@ -9,6 +9,16 @@ body
 	color #000
 	background-color #fff
 	line-height: 1.56
+	@media screen and (min-width 2295px)
+		font-size: 20px
+.wrapper
+	overflow hidden
+.container
+	width 100%
+	max-width 1200px
+	position relative
+	@media screen and (min-width 2295px)
+		max-width 1400px
 a
 	color: #000
 	&:focus
@@ -62,15 +72,51 @@ footer
 		cursor pointer
 		margin 0 auto
 .button
-	display block
+	display inline-block
+	font-size: 18px
 	text-align center
 	margin 0 auto
 	text-decoration none
 	color: #fff
-	width: 100%
+	min-width 270px
+	background-color: #9D7D5C;
+	border-radius: 2px;
+	padding: 10px 30px
+	transition: all .3s ease
 	&:focus
 		text-decoration none
+		color #fff
 	&:hover
 		text-decoration none
+		color #fff
+		background-color: #D5AD85
 .general-title
-	text-align center
+	font-size: 42px;
+	font-weight: 600;
+	margin-bottom: 30px
+	text-transform uppercase
+	&-white
+		color #fff
+	@media screen and (max-width 991px)
+		font-size: 33px
+	@media screen and (max-width 560px)
+		font-size: 24px
+.general-list
+	li
+		list-style: none
+		padding-left: 47px
+		font-size: 24px
+		margin-bottom: 36px
+		position relative
+		&:before
+			content: ''
+			display block
+			position absolute
+			width 26px
+			height 3px
+			background-color: #9D7D5C
+			top 18px
+			left 0
+	&-white
+		li
+			color #fff
