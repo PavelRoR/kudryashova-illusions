@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // Якорь
     /* Якорь */
-    $(".header-menu li a").click(function (f) {
+    $(".header-menu li a, a.button-mobile").click(function (f) {
         f.preventDefault();
         var a = $(this).attr("href"),
             b = $(a).offset().top;

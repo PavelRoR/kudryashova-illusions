@@ -1,7 +1,11 @@
 #for
 	padding 40px 0 120px
+	@media screen and (max-width 991px)
+		padding 40px 0 60px
 	.row:last-of-type
 		margin-top: 180px
+		@media screen and (max-width 991px)
+			margin-top: 50px
 	.col-md-6
 		position relative
 .for
@@ -12,12 +16,28 @@
 			max-width 597px
 		&-2
 			max-width 681px
+		@media screen and (max-width 991px)
+			display block
+			width 100%
+			max-width 414px
+			margin 30px auto 0
 	&-subtitle
 		font-size: 40px
 		font-weight: 300
 		position absolute
 		top -10px
-		left 0
+		left -98%
+		@media screen and (max-width 1200px)
+			max-width 500px
+		@media screen and (max-width 991px)
+			position: static
+			max-width none
+			margin-bottom: 30px
+			font-size: 30px
+			color #8B8B8B
+		@media screen and (max-width 560px)
+			font-size: 24px
+			margin-bottom: 20px
 	&-list
 		li
 			list-style none
@@ -40,3 +60,17 @@
 				border-radius: 50px
 			&:hover
 				color #E7D3BE
+		@media screen and (max-width 991px)
+			li
+				margin-bottom: 20px
+				padding-left: 20px
+				font-size: 24px
+				&:before
+					width 10px
+					height: 10px
+					top 15px
+		@media screen and (max-width 560px)
+			li
+				font-size: 18px
+				&:before
+					top 10px

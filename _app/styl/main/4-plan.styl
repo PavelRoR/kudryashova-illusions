@@ -1,10 +1,13 @@
 #plan
 	padding 70px 0 80px
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 560px)
+		padding 50px 0
 .lessons
 	position relative
 	border 1px solid #000
 	width 100%
-	// padding 50px 55px 80px
 	&:before
 		content: ''
 		display block
@@ -15,24 +18,40 @@
 		background-image: linear-gradient(45deg,#d4ad85 49%,#000 50%,#fff 50%,#fff 100%)
 		top -1px
 		right -3px
+		@media screen and (max-width 560px)
+			width 18px
+			height: 16px
 	&-wrapper
 		overflow hidden
 .lesson
 	padding 50px 55px 40px
+	@media screen and (max-width 991px)
+		padding 30px
+		&-1
+			padding 50px 30px 30px
+	@media screen and (max-width 560px)
+		padding 30px
 	&-title
 		font-size: 36px
 		font-weight: 300
 		color #D4AD85
 		margin-bottom: 10px
+		@media screen and (max-width 991px)
+			font-size: 30px
+		@media screen and (max-width 560px)
+			font-size: 24px
 	&-text
 		font-size: 30px
-	// &-marquee
-	// 	overflow hidden
-	// 	display block
-	// 	width 100%
-	// 	height: 1px
+		@media screen and (max-width 991px)
+			font-size: 24px
+		@media screen and (max-width 560px)
+			font-size: 18px
 	&:last-of-type
 		padding-bottom: 80px
+		@media screen and (max-width 991px)
+			padding-bottom: 50px
+		@media screen and (max-width 560px)
+			padding-bottom: 0
 .marquee-plan
 	height: 1px
 	background-image: url(../img/icons/plan-marquee.png)
@@ -44,6 +63,8 @@
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	@media screen and (max-width 560px)
+		background-image: url(../img/icons/plan-marquee-mobile.png)
 @keyframes marq
 	0%
 		background-position: 100% 0

@@ -1,16 +1,30 @@
 #questions
 	padding 70px 0 160px
 	background-color: #050505
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 560px)
+		padding 60px 0 30px
 .question-stroke
 	font-size: 36px
 	color #9D7D5C
+	@media screen and (max-width 991px)
+		font-size: 30px
+	@media screen and (max-width 560px)
+		font-size: 24px
 .question
 	position relative
 	&-1
 		margin-top: 100px
+		@media screen and (max-width 991px)
+			margin-top: 50px
 .answer
 	position relative
 	padding 0 0 0 50px
+	@media screen and (max-width 991px)
+		padding 0 0 0 30px
+	@media screen and (max-width 560px)
+		padding 0 0 0 20px
 	&-number
 		font-size: 42px
 		font-weight: 600
@@ -18,11 +32,27 @@
 		position absolute
 		top -13px
 		left 0
+		@media screen and (max-width 991px)
+			font-size: 36px
+		@media screen and (max-width 560px)
+			font-size: 20px
+			top -6px
 	&-text
 		color: #fff
 		font-size: 30px
 		margin-bottom: 70px
+		@media screen and (max-width 991px)
+			font-size: 24px
+			margin-bottom: 30px
+		@media screen and (max-width 560px)
+			font-size: 14px
 		&:last-of-type
 			margin-bottom: 150px
+			@media screen and (max-width 991px)
+				margin-bottom: 50px
 .marquee-question
 	padding-bottom: 100px
+	@media screen and (max-width 991px)
+		padding-bottom: 70px
+	@media screen and (max-width 560px)
+		padding-bottom: 50px

@@ -1,9 +1,17 @@
 #author
 	padding 130px 0
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 385px)
+		padding 40px 0
 .author-pre-title
 	font-size: 24px
 	color #727272;
 	margin-bottom: 15px
+	@media screen and (max-width 385px)
+		font-size: 14px
+		color #858585;
+		margin-bottom: 5px
 .author-img
 	position relative
 	padding-top: 100%
@@ -29,3 +37,21 @@
 			color #E0C3A6;
 		&:hover
 			color #B3906E;
+	@media screen and (max-width 560px)
+		font-size: 14px
+		margin-top: 20px
+.author-tv
+	&-title
+		margin: 80px 0 50px
+		font-size: 24px
+		font-weight: 300
+		color #727272
+		@media screen and (max-width 991px)
+			margin 70px 0 0
+	&-img
+		display block
+		margin 0 auto
+		width 100%
+		max-width 430px
+		@media screen and (max-width 991px)
+			margin-top: 30px
