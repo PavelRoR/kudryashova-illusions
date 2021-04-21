@@ -12,14 +12,40 @@
 		font-size: 14px
 		color #858585;
 		margin-bottom: 5px
-.author-img
+.author-slider
+	width 200%
 	position relative
-	padding-top: 100%
-	img
-		position absolute
-		top -80px
+	left 50px
+	background-image: url(../img/backs/author.png)
+	background-repeat: no-repeat
+	background-position: bottom left
+	background-size auto 93%
+	@media screen and (max-width 991px)
+		width 100%
+		margin-top: 100px
+		background-size: 100% 87%
 		left 0
-		width auto
+	@media screen and (max-width 560px)
+		margin-top: 50px
+	.slick-list
+		padding-left: 100px
+		@media screen and (max-width 1200px)
+			padding-left: 50px
+		@media screen and (max-width 991px)
+			padding-left: 0
+	&-img
+		@media screen and (max-width 991px)
+			display block
+			margin 0 auto
+			width 90%
+			max-width 404px
+		// @media screen and (max-width 420px)
+		// 	width 90%
+	// background-image: url(../img/images/author-1.png), url(../img/backs/author.png)
+	// background-repeat: no-repeat, no-repeat
+	// background-position: bottom left 100px, bottom left
+	// background-size contain, auto 93%
+	// padding-left: 100px
 .author-instagram
 	position relative
 	margin-top: 65px

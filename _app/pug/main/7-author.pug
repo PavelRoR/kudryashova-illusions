@@ -15,8 +15,9 @@ section#author
 					p.author-instagram-text INSTAGRAM -
 					a.author-instagram-link(href='https://www.instagram.com/tamara__kudryashova/' target='_blank') @tamara__kudryashova
 			.col-md-6
-				.author-img
-					+imgs('','img/images/tamara.png','Тамара Кудряшова')
+				.author-slider
+					each n in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+						div: img(src=path+"img/images/author-"+n+".png", alt="Фото "+n).author-slider-img
 		.author-tv
 			h4.author-tv-title Эксперт телевизионных программ в сфере отношений
 			.row

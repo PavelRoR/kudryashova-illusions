@@ -69,6 +69,20 @@ $(document).ready(function () {
         startVisible: true,
         duplicated: true
     });
-    // });
+    // Слайдер с Тамарой
+    $('.author-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        speed: 300,
+        arrows: false,
+        centerPadding: '20px',
+        centerMode: false,
+        pauseOnHover: false,
+        pauseOnFocus: false
+    });
     /*Конец документа*/
 });
