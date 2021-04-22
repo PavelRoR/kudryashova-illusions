@@ -38,19 +38,19 @@ $(document).ready(function () {
     // Работа форм
     $(function () {
         var check = $('.check', this),
-            email = $('.input-mail', this),
+            email = $('.input', this),
             message = $('.alert-message', this);
         $(".form").on("submit", function () {
             var check = $('.check', this),
                 message = $('.alert-message', this),
                 reNone = /.+/,
-                email = $('.input-mail', this);
+                email = $('.input', this);
             if (!email.val().match(reNone)) {
-                message.text('↖ Введите email').slideDown(500);
+                message.text('Введите email').slideDown(500);
                 return false;
             }
             if (!check.prop("checked")) {
-                message.text('Подтвердите соглашение ↘').slideDown(500);
+                message.text('Подтвердите соглашение').slideDown(500);
                 return false;
             }
             if (email.val() && check) {
@@ -64,11 +64,13 @@ $(document).ready(function () {
             message.slideUp(500);
         });
     });
+    if ($(window).width() > 561) {
     $('.marquee-question').marquee({
         duration: 15000,
         startVisible: true,
         duplicated: true
     });
+}
     // Слайдер с Тамарой
     $('.author-slides').slick({
         autoplay: true,
