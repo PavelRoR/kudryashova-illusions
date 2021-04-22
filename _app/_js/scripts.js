@@ -70,7 +70,7 @@ $(document).ready(function () {
         duplicated: true
     });
     // Слайдер с Тамарой
-    $('.author-slider').slick({
+    $('.author-slides').slick({
         autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 1,
@@ -79,7 +79,7 @@ $(document).ready(function () {
         dots: false,
         speed: 300,
         arrows: false,
-        centerPadding: '20px',
+        centerPadding: '0',
         centerMode: false,
         pauseOnHover: false,
         pauseOnFocus: false
