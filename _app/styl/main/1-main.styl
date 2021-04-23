@@ -24,7 +24,7 @@
 		background-position: bottom center
 .main
 	&-pre
-		margin: 100px 0 20px
+		margin: 50px 0 20px
 		@media screen and (max-width 991px)
 			margin 0 0 20px
 		@media screen and (max-width 560px)
@@ -39,15 +39,30 @@
 		@media screen and (max-width 560px)
 			font-size: 26px
 	&-subtitle
-		font-size: 26px
+		font-size: 28px
 		font-weight: 300
-		margin 10px 0 70px
+		margin 10px 0 20px
 		@media screen and (max-width 991px)
-			font-size: 22px
-			margin 10px 0 20px
+			font-size: 24px
 		@media screen and (max-width 560px)
-			font-size: 18px
+			font-size: 20px
 			margin 10px 0
+	&-info
+		font-size: 20px
+		margin-bottom: 10px
+		span
+			display inline-block
+			font-weight: 500
+			color: #e7d3be
+		@media screen and (max-width 560px)
+			font-size: 16px
+			margin-bottom: 5px
+		&:last-of-type
+			margin-bottom: 70px
+			@media screen and (max-width 991px)
+				margin-bottom: 40px
+			@media screen and (max-width 560px)
+				margin-bottom: 20px
 	&-img
 		display none
 		width 100%
