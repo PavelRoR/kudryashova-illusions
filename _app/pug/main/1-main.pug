@@ -10,7 +10,7 @@ section#main
 					span 12 мая, в 19:00 (мск)
 				p.main-info Автор: 
 					span Тамара Кудряшова
-				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-desktop.form-main
+				form(action!=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-desktop.form-main
 					.email-block.email-block-form
 						input( type="hidden" value="1" name="required_fields[email]")
 						input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="E-mail")

@@ -13,7 +13,7 @@ section#get
 					li поймешь почему в ваших отношениях ничего не меняется
 					li проведешь анализ своих взаимоотношений
 					li определишь дальнейший путь развития
-				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-desktop.form-get
+				form(action!=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-desktop.form-get
 					.email-block.email-block-form
 						input( type="hidden" value="1" name="required_fields[email]")
 						input(class="input input-mail input-mail-get" name="Contact[email]" type="text" placeholder="E-mail")

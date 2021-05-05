@@ -1,0 +1,61 @@
+section#prices
+	.container
+		+gt('','Выберите свой вариант участия:')
+		.packets
+			.row
+				.col-md-6
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| Стандарт
+						.packet-body
+							ul.packet-body-list
+								li 13 модулей из 40 уроков,
+								li телеграм-чат,
+								li проверка д/з кураторами,
+								li доступ к курсу - 3 месяца после окончания
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span 17 900р.
+							p.cost.cost-sale Скидка:
+								span 3 000р.
+							p.cost.cost-today Стоимость сегодня:
+								span 14 900р.
+							+b('button-cost','','Выбрать','_blank','link-1')
+				.col-md-6
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| ВИП
+						.packet-body
+							ul.packet-body-list
+								li 13 модулей из 40 уроков,
+								li проверка д/з тренером,
+								li 1 личная консультация от тренера (*в течение прохождения курса),
+								li закрытый телеграм-чат с тренером,
+								li воркбук после прохождения программы с материалами курса всех модулей
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span 34 900р.
+							p.cost.cost-sale Скидка:
+								span 5 000р.
+							p.cost.cost-today Стоимость сегодня:
+								span 29 900р.
+							+b('button-cost','','Выбрать','_blank','link-2')
+		<?php if($now < $dates[1]):?>
+		.prepayment
+			h4.prepayment-title Акция!!!
+			p.prepayment-text Платите 1 000р., бонусом получаете 
+				span#prepayment-bonus 1 000р. 
+				br
+				| На счет зачисляется 
+				span#prepayment-credited 2 000р.
+			+b('button-prep','<?=$prepLink;?>','Оплатить 1 000р.','_blank','prepLink')
+		<? endif;?>
+		<?php if($now < $dates[0]):?>
+		.timer
+			h4.timer-title Скидка сгорит через:
+			.clock
+		<? endif;?>

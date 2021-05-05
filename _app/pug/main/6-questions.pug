@@ -47,7 +47,7 @@ section#questions
 				h5.answer-number 6.
 				p.answer-text Часто мы ожидаем от мужчины одних действий, а в итоге наблюдаем совершенно другие, что приводит к обидам и разочарованиям.
 				p.answer-text Это происходит тогда, когда нет знаний в области психологии мужчин, их потребностей и поведения.
-		form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-desktop.form-questions
+		form(action!=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-desktop.form-questions
 			.email-block.email-block-form
 				input( type="hidden" value="1" name="required_fields[email]")
 				input(class="input input-mail input-mail-questions" name="Contact[email]" type="text" placeholder="E-mail")
