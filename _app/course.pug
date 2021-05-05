@@ -17,9 +17,9 @@
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 
-mixin b(cl,href='#prices',p,target,id)
-	a.button(class=cl href=href, target=target id=id)=p
-
+mixin b(cl, clb, href='#prices', p, target, id)
+	.button-wrapper(class=cl)
+		a.button(class=clb href=href, target=target id=id)=p
 mixin imgs(cl,src,alt)
 	img(class=cl src=path+src alt=alt)
 mixin gt(cl,h3)
@@ -40,7 +40,7 @@ html(lang="ru")
 			include pug/course/5-prices
 			include pug/course/6-get
 			include pug/main/7-author
-			include pug/course/7-rec
+			//- include pug/course/7-rec
 		include pug/base/2-footer
 		include pug/base/3-scripts
 		//- include pug/scripts/chat

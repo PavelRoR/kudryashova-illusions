@@ -1,10 +1,73 @@
+#prices
+	padding 40px 0 80px
+.packet
+	width 100%
+	max-width 420px
+	margin 0 auto 30px
+	padding 50px 30px
+	transition: all .3s ease
+	&:hover
+		color: #fff
+		background-color: #050505
+	&-head
+		&-title
+			text-align center
+			font-size: 32px
+			font-weight: 600
+			text-transform uppercase
+			color: #d4ad85
+			small
+				display block
+				font-size: 16px
+				font-weight: 300
+				color: #727272
+				text-transform none
+	&-body
+		padding 20px 0
+		min-height 420px
+		&-list
+			li
+				font-size: 20px
+				margin-bottom: 20px
+				position relative
+				padding-left: 20px
+				list-style: none
+				&:before
+					content: ''
+					display block
+					position absolute
+					top 11px
+					left 0
+					border-radius: 50px
+					width 10px
+					height: 10px
+					background-color: #d4ad85
+.cost
+	text-align center
+	font-size: 24px
+	text-transform uppercase
+	// font-weight: 500
+	margin-bottom: 20px
+	line-height: 1.4
+	span
+		display block
+		font-size: 48px
+		font-weight: 600
+	&-full
+		span
+			text-decoration line-through
+			&.unbroken
+				text-decoration none
+	&-sale
+		color red
+	&-today
+		color limegreen
 .prepayment
 	text-align center
-	margin-bottom: 40px
+	margin-bottom: 80px
 	&-title
 		font-size: 36px
-		font-family: GP
-		font-weight: bold
+		font-weight: 600
 		text-transform uppercase
 		color red
 	&-text
@@ -12,8 +75,7 @@
 		margin 10px 0 20px
 .timer-title
 	font-size: 36px
-	font-family: GP
-	font-weight: bold
+	font-weight: 600
 	text-transform uppercase
 	line-height: 1.2
 	text-align center
@@ -21,12 +83,17 @@
 .flip-clock-wrapper
 	width: 100%
 	max-width 460px
-	margin-top: 30px
 .flip-clock-divider .flip-clock-label
-	color #671659
+	color #050505
 .flip-clock-dot
-	background-color: #671659
+	background-color: #050505
 .flip-clock-wrapper ul li a div div.inn
 	color: #fff
-	background-color: #671659
+	background-color: #050505
 	text-shadow: none
+	border-radius: 2px
+.flip-clock-wrapper ul li a div.down
+	border-bottom-left-radius: 2px
+	border-bottom-right-radius: 2px
+.flip-clock-wrapper .flip
+	box-shadow: none

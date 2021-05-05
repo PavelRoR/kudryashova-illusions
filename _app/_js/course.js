@@ -35,7 +35,7 @@ $(document).ready(function () {
             mml3.removeClass('switched');
         }
     });
-
+/*
     if ($(window).width() > 561) {
         $('.marquee-question').marquee({
             duration: 15000,
@@ -43,6 +43,7 @@ $(document).ready(function () {
             duplicated: true
         });
     }
+    */
 /* Таймер */
 $(function () {
     var clock;

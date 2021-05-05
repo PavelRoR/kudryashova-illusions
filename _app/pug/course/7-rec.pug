@@ -1,7 +1,7 @@
 section#record
 	.container
 		<?php if($now < $dates[1]) {;?>
-		+gt('','Запись мастер-класса')
+		+gt('general-title-center','Запись мастер-класса')
 		.record
 			h4.record-title Запись занятия от 12.05.21
 			.video-wrapper.video-wrapper-record
@@ -11,7 +11,7 @@ section#record
 		br
 		p.record-text-2 Занятие будет в свободном доступе до 16.05.21
 		<?php } else {;?>
-		+gt('','Записи мастер-класса более нет в сободном доступе')
+		+gt('general-title-center','Записи мастер-класса более нет в сободном доступе')
 		p.record-text-2 Но Вы можете приобрести ее за 250р. и радоваться вместе с теми, кто уже смотрел
-		+b('button-rec ',' ','Купить запись', '_blank')
+		+b('button-wrapper-center','button-rec', '#!', 'Купить запись', '_blank')
 		<?php };?>

@@ -1,0 +1,99 @@
+ #plan
+	padding 70px 0 80px
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 560px)
+		padding 50px 0
+.modules
+	position relative
+	border 1px solid #000
+	width 100%
+	&:before
+		content: ''
+		display block
+		position: absolute;
+		width: 64px
+		height: 59px
+		background-color: #D4AD85;
+		background-image: linear-gradient(45deg,#d4ad85 49%,#000 50%,#fff 50%,#fff 100%)
+		top -1px
+		right -3px
+		@media screen and (max-width 560px)
+			width 18px
+			height: 16px
+	&-wrapper
+		overflow hidden
+.module
+	padding 50px 55px 40px
+	@media screen and (max-width 991px)
+		padding 30px
+		&-1
+			padding 50px 30px 30px
+	@media screen and (max-width 560px)
+		padding 30px
+	&-title
+		font-size: 36px
+		font-weight: 600
+		color #D4AD85
+		margin-bottom: 10px
+		@media screen and (max-width 991px)
+			font-size: 30px
+		@media screen and (max-width 560px)
+			font-size: 24px
+	&-text
+		font-size: 30px
+		span
+			font-weight: 500
+		@media screen and (max-width 991px)
+			font-size: 24px
+		@media screen and (max-width 560px)
+			font-size: 18px
+	&:last-of-type
+		padding-bottom: 80px
+		@media screen and (max-width 991px)
+			padding-bottom: 50px
+		@media screen and (max-width 560px)
+			padding-bottom: 0
+.marquee-plan
+	height: 1px
+	background-image: url(../img/icons/plan-marquee.png)
+	background-repeat: repeat-x
+	width 1000%
+	animation: marq;
+	animation-duration: 70s;
+	animation-direction: normal;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	@media screen and (max-width 560px)
+		background-image: url(../img/icons/plan-marquee-mobile.png)
+@keyframes marq
+	0%
+		background-position: 100% 0
+	50%
+		background-position: 50% 0
+	100%
+		background-position: 0 0
+.bonus
+	padding 50px 55px 40px
+	&-title
+		font-size: 30px
+		font-weight: 500
+		color:  #D4AD85
+	&-list
+		margin 30px 0 50px 30px
+		li
+			list-style: none
+			padding-left: 33px
+			font-size: 20px
+			margin-bottom: 20px
+			position relative
+			&:before
+				content: ''
+				display block
+				position absolute
+				width 20px
+				height 3px
+				background-color: #9D7D5C
+				top 14px
+				left 0
