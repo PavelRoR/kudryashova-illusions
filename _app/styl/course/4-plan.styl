@@ -35,13 +35,13 @@
 		font-size: 36px
 		font-weight: 600
 		color #D4AD85
-		margin-bottom: 10px
 		@media screen and (max-width 991px)
 			font-size: 30px
 		@media screen and (max-width 560px)
 			font-size: 24px
 	&-text
 		font-size: 30px
+		margin 10px 0 20px
 		span
 			font-weight: 500
 		@media screen and (max-width 991px)
@@ -54,6 +54,39 @@
 			padding-bottom: 50px
 		@media screen and (max-width 560px)
 			padding-bottom: 0
+	&-list
+		li
+			position relative
+			list-style: none
+			font-size: 22px;
+			margin-bottom: 20px;
+			padding-left: 30px;
+			transition: all 0.3s ease;
+			&:before
+				content: '';
+				display: block;
+				position: absolute;
+				top: 12px;
+				left: 0;
+				width: 14px;
+				height: 14px;
+				background-color: #e3cdb5;
+				border-radius: 50px;
+	&-sublist
+		margin-bottom: 20px
+		li
+			padding-left: 33px;
+			font-size: 20px;
+			margin: 10px 0 0 30px;
+			&:before
+				content: '';
+				display: block;
+				position: absolute;
+				width: 20px;
+				height: 3px;
+				background-color: #9d7d5c;
+				top: 14px;
+				left: 0;
 .marquee-plan
 	height: 1px
 	background-image: url(../img/icons/plan-marquee.png)

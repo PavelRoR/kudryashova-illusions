@@ -22,7 +22,7 @@ section#prices
 								span 3 000р.
 							p.cost.cost-today Стоимость сегодня:
 								span 14 900р.
-							+b('button-wrapper-center', 'button-cost','','Выбрать','_blank','link-1')
+							+b('button-wrapper-center', 'button-cost','https://shop.iomp.ru/?r=ordering/cart/as1&id=156&clean=true&lg=ru','Выбрать','_blank','link-1')
 				.col-md-6
 					.packet
 						.packet-head
@@ -43,7 +43,7 @@ section#prices
 								span 5 000р.
 							p.cost.cost-today Стоимость сегодня:
 								span 29 900р.
-							+b('button-wrapper-center', 'button-cost','','Выбрать','_blank','link-2')
+							+b('button-wrapper-center', 'button-cost','https://shop.iomp.ru/?r=ordering/cart/as1&id=159&clean=true&lg=ru','Выбрать','_blank','link-2')
 		<?php if($now < $dates[1]):?>
 		.prepayment
 			h4.prepayment-title Акция!!!
@@ -52,7 +52,7 @@ section#prices
 				br
 				| На счет зачисляется 
 				span#prepayment-credited 2 000р.
-			+b('button-wrapper-center', 'button-prep', '<?=$prepLink;?>', 'Оплатить 1 000р.', '_blank', 'prepLink')
+			+b('button-wrapper-center', 'button-prep', 'https://shop.iomp.ru/?r=ordering/cart/as1&id=162&clean=true&lg=ru', 'Оплатить 1 000р.', '_blank', 'prepLink')
 		<? endif;?>
 		<?php if($now < $dates[0]):?>
 		.timer.hide

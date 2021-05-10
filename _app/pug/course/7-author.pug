@@ -1,0 +1,51 @@
+section#author
+	.container
+		.row
+			.col-md-6
+				p.author-pre-title 
+					span О тренере
+					| Автор курса - любимая и любящая женщина, состоящая в счастливом браке
+				+gt('','ТАМАРА КУДРЯШОВА')
+				ul.general-list
+					li Преподаватель
+					li Психолог-консультант
+					li Сертифицированный коуч
+					li Сертифицированный арт-терапевт
+					li Сертифицированный тренер программ личностного роста в области семейных отношений
+					li Специалист по работе с метафорическими картами
+				.author-instagram
+					p.author-instagram-text INSTAGRAM -
+					a.author-instagram-link(href='https://www.instagram.com/tamara__kudryashova/' target='_blank') @tamara__kudryashova
+			.col-md-6
+				.author-slider
+					.author-slides
+						each n in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+							div: img(src=path+"img/images/author-"+n+".jpg", alt="Фото "+n).author-slides-img
+					+imgs('author-slider-mask','img/backs/author-mask.png','Маска слайдера')
+		.author-tv
+			h4.author-tv-title Эксперт телевизионных программ в сфере отношений
+			.row
+				.col-md-4
+					+imgs('author-tv-img', 'img/images/tv-1.png', 'Фото 1 с тв-шоу')
+				.col-md-4
+					+imgs('author-tv-img', 'img/images/tv-2.png', 'Фото 2 с тв-шоу')
+				.col-md-4
+					+imgs('author-tv-img', 'img/images/tv-3.png', 'Фото 3 с тв-шоу')
+section#revs
+	.container
+		+gt('', 'Видео-отзывы:')
+		.row
+			each video, index in {1: 'lcQiOxzQQTc', 2: 'mrXes7v4ex8'}
+				.col-md-6
+					.video-wrapper-rev-back: .video-wrapper.video-wrapper-rev(data-youtube=video data-img=path+"img/revs/video-"+index+".jpg"): img(src=path+"img/revs/video-"+index+".jpg" alt="Видео-отзыв "+index)
+	.container
+		+gt('general-title-revs-2','Отзывы:')
+		.arrows
+	.revs-slider-text
+		each n in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+			|
+			|
+			a.text-rev-link(href=path+"img/revs/text-"+n+".jpg")
+				|
+				|
+				img(src=path+"img/revs/text-"+n+".jpg", alt="Отзыв "+n).text-rev-img
