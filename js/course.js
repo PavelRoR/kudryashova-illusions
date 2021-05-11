@@ -101,16 +101,20 @@ $(document).ready(function () {
         centerPadding: '40px',
         centerMode: true,
         appendArrows: '.arrows',
-        responsive: [{
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 3
-            },
-            breakpoint: 561,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
+        responsive: [
+             {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 561,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+        ]
     });
     $('.slick-dots').wrap('<div class="container container-revs">');
     $('.text-rev-link').magnificPopup({

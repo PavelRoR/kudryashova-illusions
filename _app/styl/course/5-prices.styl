@@ -1,5 +1,7 @@
 #prices
 	padding 40px 0 80px
+	@media screen and (max-width 560px)
+		padding 40px 0
 .packet
 	width 100%
 	max-width 420px
@@ -11,6 +13,8 @@
 	&:hover
 		color: #fff
 		background-color: #050505
+	@media screen and (max-width 560px)
+		padding 30px 20px
 	&-head
 		&-title
 			text-align center
@@ -24,9 +28,13 @@
 				font-weight: 300
 				color: #727272
 				text-transform none
+			@media screen and (max-width 560px)
+				font-size 26px
 	&-body
 		padding 20px 0
 		min-height 420px
+		@media screen and (max-width 991px)
+			min-height 1px
 		&-list
 			li
 				font-size: 20px
@@ -44,6 +52,15 @@
 					width 10px
 					height: 10px
 					background-color: #d4ad85
+			@media screen and (max-width 560px)
+				li
+					font-size 18px
+					padding-left 20px
+					margin-bottom 10px
+					&:before
+						width 10px
+						height 10px
+						top 10px
 .cost
 	text-align center
 	font-size: 24px
@@ -55,6 +72,11 @@
 		display block
 		font-size: 48px
 		font-weight: 600
+	@media screen and (max-width 560px)
+		font-size 20px
+		line-height 1.2
+		span
+			font-size 36px
 	&-full
 		span
 			text-decoration line-through
@@ -75,6 +97,13 @@
 	&-text
 		font-size: 20px
 		margin 10px 0 20px
+	@media screen and (max-width 560px)
+		margin-bottom 40px
+		&-title
+			font-size 28px
+		&-text
+			font-size 16px
+			margin 10px 0 15px
 .timer-title
 	font-size: 36px
 	font-weight: 600
@@ -82,6 +111,8 @@
 	line-height: 1.2
 	text-align center
 	color red
+	@media screen and (max-width 560px)
+		font-size 28px
 .flip-clock-wrapper
 	width: 100%
 	max-width 460px
@@ -99,3 +130,32 @@
 	border-bottom-right-radius: 2px
 .flip-clock-wrapper .flip
 	box-shadow: none
+@media screen and (max-width 560px)
+	.flip-clock-wrapper
+		width 100%
+		max-width 260px
+		margin-top: 20px
+	.flip-clock-wrapper ul
+		height 50px
+		margin 3px
+	.flip-clock-wrapper ul li
+		line-height: 50px
+	.flip-clock-wrapper ul li a div.up::after
+		top 24px
+	.flip-clock-wrapper ul li a div div.inn
+		font-size: 40px
+	.flip-clock-divider
+		height 50px
+	.flip-clock-dot
+		width 7px
+		height 7px
+		left 3px
+	.flip-clock-dot.top
+		top 31px
+	.flip-clock-dot.bottom
+		bottom: 27px
+	.flip-clock-divider .flip-clock-label
+	.flip-clock-divider.minutes .flip-clock-label
+	.flip-clock-divider.seconds .flip-clock-label
+		font-size:  10px
+		right: -59px
